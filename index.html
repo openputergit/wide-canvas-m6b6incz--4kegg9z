@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhraws - Fun Games & More</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#1a1a1a',
+                        darker: '#121212'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: 'Inter', sans-serif;
+        }
+        .section-border {
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen p-4 md:p-8">
+    <!-- Main Container -->
+    <div class="max-w-7xl mx-auto space-y-6">
+        <!-- Header/Search Section -->
+        <div class="section-border bg-dark p-4">
+            <input type="text" placeholder="Search games..." class="w-full bg-darker border border-gray-700 rounded-lg p-3 text-white placeholder-gray-400 focus:outline-none focus:border-gray-500">
+        </div>
+
+        <!-- Game Categories Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Arcade Games -->
+            <div class="section-border bg-dark p-6 hover:bg-opacity-90 transition cursor-pointer">
+                <i class="bi bi-joystick text-4xl mb-3 text-purple-500"></i>
+                <h3 class="text-xl font-semibold mb-2">Arcade Games</h3>
+                <p class="text-gray-400">Classic fun at your fingertips</p>
+            </div>
+
+            <!-- Puzzle Games -->
+            <div class="section-border bg-dark p-6 hover:bg-opacity-90 transition cursor-pointer">
+                <i class="bi bi-puzzle text-4xl mb-3 text-blue-500"></i>
+                <h3 class="text-xl font-semibold mb-2">Puzzle Games</h3>
+                <p class="text-gray-400">Train your brain</p>
+            </div>
+
+            <!-- Action Games -->
+            <div class="section-border bg-dark p-6 hover:bg-opacity-90 transition cursor-pointer">
+                <i class="bi bi-lightning text-4xl mb-3 text-yellow-500"></i>
+                <h3 class="text-xl font-semibold mb-2">Action Games</h3>
+                <p class="text-gray-400">Fast-paced excitement</p>
+            </div>
+        </div>
+
+        <!-- About Section with Image -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="section-border bg-dark p-6">
+                <div class="flex flex-col justify-center h-full">
+                    <h2 class="text-2xl font-bold mb-4">Hi, I am Dhraws - Dhruv Draws</h2>
+                    <p class="text-gray-400 mb-3">This is a fun website with smol games and some other stuff ummm honestly just a placeholder to park the domain</p>
+                    <p class="text-gray-400">I'll add in some other stuff soon ;)</p>
+                </div>
+            </div>
+            <div class="section-border bg-dark overflow-hidden">
+                <img src="https://placehold.co/600x400/1a1a1a/ffffff" alt="Profile Image" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </div>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
